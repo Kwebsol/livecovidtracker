@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#covid {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: rgb(233, 233, 233);
+  padding: 4% 18%;
+
+  height: 100vh;
+}
+.header {
+  text-align: center;
+}
+.header h1 {
+  font-size: 4em;
+}
+.header h2 {
+  font-size: 2em;
+  margin-bottom: 8px;
+}
+
+.row {
+  margin: 20px -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  margin-bottom: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  color: #312e2e;
+}
+.country {
+  color: white;
+  background-image: linear-gradient(to bottom right, #ff9933 46%, #138808);
+  font-size: 2.5em;
+  font-weight: 900;
+}
+.confirmend {
+  background-color: thistle;
+}
+.active {
+  background-color: yellow;
+}
+.recovered {
+  background-color: yellowgreen;
+}
+.death {
+  background-color: rgb(255, 123, 100);
+}
+
+footer {
+  background: rgb(243, 243, 243);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+footer p {
+  font-size: 14px;
+  padding: 6px;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  #covid {
+    padding: 2% 10%;
+  }
+}
